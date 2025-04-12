@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nemzeti Internetbiztonság és Biztonság</title>
+  <title>Nemzeti Internetbiztonság és Biztonság – nib.govt.hu</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      background: #f8f9fa;
+      color: #212529;
     }
     header {
-      background: #003366;
+      background-color: #002147;
       color: white;
-      padding: 20px 0;
+      padding: 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
+      font-size: 28px;
+    }
+    nav {
+      margin-top: 10px;
     }
     nav ul {
       list-style: none;
       padding: 0;
-      margin: 10px 0 0 0;
       display: flex;
       justify-content: center;
+      gap: 20px;
       flex-wrap: wrap;
-    }
-    nav ul li {
-      margin: 0 15px;
     }
     nav ul li a {
       color: white;
@@ -41,34 +42,35 @@
       text-decoration: underline;
     }
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
     section {
-      padding: 20px 0;
+      padding: 30px 0;
     }
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #003366;
+      background: #002147;
       color: white;
+      text-align: center;
+      padding: 15px;
       margin-top: 40px;
     }
     .button {
-      background: #007acc;
+      background-color: #007acc;
       color: white;
-      padding: 10px 20px;
       border: none;
-      border-radius: 4px;
+      padding: 10px 20px;
+      margin-top: 20px;
       cursor: pointer;
-      margin-top: 10px;
+      border-radius: 4px;
+      font-weight: bold;
     }
     .button:hover {
-      background: #005999;
+      background-color: #005fa3;
     }
   </style>
 </head>
@@ -79,8 +81,8 @@
   <nav>
     <ul>
       <li><a href="#">Kezdőlap</a></li>
-      <li><a href="#">Rólunk</a></li>
-      <li><a href="#">Szolgáltatások</a></li>
+      <li><a href="#">Kiberfenyegetések</a></li>
+      <li><a href="#">Ajánlások</a></li>
       <li><a href="#">Kapcsolat</a></li>
     </ul>
   </nav>
@@ -88,35 +90,35 @@
 
 <main>
   <section>
-    <h2>Üdvözöljük!</h2>
-    <p>Ez a Nemzeti Internetbiztonság és Biztonság hivatalos weboldala. Célunk a magyarországi kiberbiztonság javítása, az online fenyegetések megelőzése, valamint a lakosság és intézmények védelme.</p>
-    <button class="button" onclick="showAlert()">Tudjon meg többet</button>
+    <h2>Üdvözöljük a nib.govt.hu hivatalos oldalán</h2>
+    <p>A <strong>Nemzeti Internetbiztonság és Biztonság</strong> célja Magyarország digitális biztonságának erősítése. Feladatunk az online fenyegetések azonosítása, a közszféra támogatása, valamint a lakosság tájékoztatása az aktuális kockázatokról.</p>
+    <button class="button" onclick="showNotice()">Aktuális kiberfigyelmeztetések</button>
   </section>
 
   <section>
-    <h2>Fő Szolgáltatásaink</h2>
+    <h2>Tevékenységeink</h2>
     <ul>
-      <li>Online fenyegetések elemzése</li>
-      <li>Nemzeti kiber-riasztási rendszer</li>
-      <li>Oktatási és tudatossági kampányok</li>
-      <li>Incident Response támogatás</li>
+      <li>Nemzeti kiberbiztonsági stratégia koordinálása</li>
+      <li>Incident response és gyors reagálási egység működtetése</li>
+      <li>Digitális oktatás és tudatosságnövelés</li>
+      <li>Kormányzati rendszerek védelme és elemzése</li>
     </ul>
   </section>
 
   <section>
     <h2>Kapcsolat</h2>
-    <p>E-mail: kapcsolat@internetbiztonsag.hu</p>
-    <p>Telefonszám: +36 1 234 5678</p>
+    <p>Ez a weboldal hivatalos kommunikációs csatornaként szolgál. Kérjük, minden bejelentést e-mailben küldjenek.</p>
+    <p><strong>E-mail:</strong> info@nib.govt.hu</p>
   </section>
 </main>
 
 <footer>
-  &copy; 2025 Nemzeti Internetbiztonság és Biztonság. Minden jog fenntartva.
+  &copy; 2025 Nemzeti Internetbiztonság és Biztonság – nib.govt.hu
 </footer>
 
 <script>
-  function showAlert() {
-    alert("További információ hamarosan elérhető!");
+  function showNotice() {
+    alert("Jelenleg nincs aktív kiberfenyegetés. Kérjük, térjen vissza később.");
   }
 </script>
 
