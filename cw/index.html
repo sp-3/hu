@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aktuális Kiberfigyelmeztetések – NIB</title>
+  <title>Aktuális Kiberfigyelmeztetések</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -11,12 +11,15 @@
       padding: 0;
       background: #f4f4f4;
       color: #212529;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
     }
     header {
       background-color: #002147;
       color: white;
-      padding: 20px 0;
       text-align: center;
+      padding: 20px 0;
     }
     header img {
       height: 50px;
@@ -27,31 +30,45 @@
       font-size: 26px;
     }
     main {
+      flex: 1;
       max-width: 960px;
-      margin: 40px auto;
+      margin: 60px auto;
       padding: 0 20px;
       background: white;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-    section {
-      padding: 30px;
-    }
     h2 {
       color: #002147;
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px 0;
     }
     .warning {
-      background-color: #ffe1e1;
-      border-left: 6px solid #d00000;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
       padding: 15px;
-      margin-bottom: 20px;
+      margin: 10px 0;
       border-radius: 4px;
     }
     .warning h3 {
-      margin: 0 0 10px;
+      margin-top: 0;
+      color: #721c24;
     }
-    .warning p {
-      margin: 0;
+    a.button {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    a.button:hover {
+      background-color: #005fa3;
     }
     footer {
       background: #002147;
@@ -59,18 +76,6 @@
       text-align: center;
       padding: 15px;
       margin-top: 40px;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 4px;
-      margin-top: 20px;
-    }
-    a.button:hover {
-      background-color: #005fa3;
     }
   </style>
 </head>
@@ -82,26 +87,19 @@
 </header>
 
 <main>
-  <section>
-    <h2>Aktuális Kiberfigyelmeztetések</h2>
+  <h2>Aktuális Kiberfigyelmeztetések</h2>
+  
+  <div class="warning">
+    <h3>Magas kockázatú zsarolóvírus-figyelmeztetés</h3>
+    <p>Friss figyelmeztetés a zsarolóvírus támadásokról. A támadók által használt technikák folyamatosan változnak. Kérjük, ne kattintson gyanús e-mailekben található hivatkozásokra, és frissítse rendszerét a legújabb biztonsági javításokkal.</p>
+  </div>
 
-    <div class="warning">
-      <h3>⚠ Veszélyes adathalász e-mailek banki nevében</h3>
-      <p>2025. április 12. – Több felhasználó jelentett adathalász e-maileket, amelyek OTP, Erste és K&H bank nevében érkeznek. Ne kattintson a linkekre, és ne adja meg adatait.</p>
-    </div>
+  <div class="warning">
+    <h3>Adathalász támadásokat észleltek</h3>
+    <p>Számos új adathalász támadás zajlik a közelmúltban. A támadók banki adatok és jelszavak megszerzésére próbálnak e-mailben hamis hivatkozásokat küldeni. Ne ossza meg személyes adatait gyanús forrásokkal!</p>
+  </div>
 
-    <div class="warning">
-      <h3>⚠ Kritikus biztonsági hiba az XMail levelezőrendszerben</h3>
-      <p>2025. április 10. – A 3.4.6 verzió előtti XMail verziókban távoli kódvégrehajtási lehetőséget fedeztek fel. Frissítés erősen ajánlott.</p>
-    </div>
-
-    <div class="warning">
-      <h3>ℹ Álhírek terjednek a "Nemzeti Kibervédelem" nevében</h3>
-      <p>2025. április 8. – Figyelem! Hamis Facebook-oldalak próbálnak bizalmas adatokat kicsalni. A hivatalos weboldalunk kizárólag: <strong>nib.govt.hu</strong></p>
-    </div>
-
-    <a href="/" class="button">Vissza a főoldalra</a>
-  </section>
+  <a href="/" class="button">Vissza a kezdőlapra</a>
 </main>
 
 <footer>
